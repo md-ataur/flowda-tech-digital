@@ -2970,9 +2970,9 @@ h6,
 		padding-top: 95px;
 	}
 
-	.rpt-100,
-	.rpy-100 {
-		padding-top: 100px;
+	.rpt-80,
+	.rpy-80 {
+		padding-top: 80px;
 	}
 
 	.rpt-105,
@@ -4691,6 +4691,9 @@ h6,
 .main-menu .navbar-collapse li button {
     background: none;
     color: #A9ADB9;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: all 500ms ease;
 }
 
 @media only screen and (max-width: 991px) {
@@ -4698,9 +4701,17 @@ h6,
 		padding: 10px 10px;
 		line-height: 22px;
 	}
+
+	.main-menu .navbar-collapse li button {
+		padding: 10px 10px;
+	}
 }
 
 .main-menu .navbar-collapse li a:hover {
+	color: var(--primary-color);
+}
+
+.main-menu .navbar-collapse li button:hover {
 	color: var(--primary-color);
 }
 
@@ -7177,8 +7188,8 @@ h6,
 }
 
 .portfolio-item:hover .portfolio-image img {
-	-webkit-filter: grayscale(1);
-	filter: grayscale(1);
+	// -webkit-filter: grayscale(1);
+	// filter: grayscale(1);
 }
 
 .portfolio-item:hover .hover-box {
@@ -7682,6 +7693,10 @@ h6,
 
 .service-item:hover .content h5 a {
 	text-decoration: underline;
+}
+
+.service-item:hover .content h5 {
+	color: var(--primary-color);
 }
 
 .service-item:hover .details-btn {
