@@ -7169,6 +7169,26 @@ h6,
 	color: black;
 }
 
+#portfolio-flters .btn {
+	color: #A9ADB9;
+	font-size: 18px;
+    position: relative;
+    display: inline-block;
+    margin: 10px 4px 0 4px;
+    transition: .5s;
+}
+
+#portfolio-flters .btn:hover,
+#portfolio-flters .btn.active {
+    color: #000;
+    background: var(--primary-color);
+}
+
+.portfolio-item:hover .btn {
+    opacity: 1;
+    transition-delay: .15s;
+}
+
 @media only screen and (min-width: 376px) {
 	.portfolio-item .portfolio-content h6 {
 		font-size: 20px;

@@ -282,14 +282,28 @@
         
         
         // ## Portfolio Masonry
-        if ($('.portfolio-masonry-two').length) {
+        /* if ($('.portfolio-masonry-two').length) {
             $(this).imagesLoaded(function () {
                 $('.portfolio-masonry-two').isotope({
                     // options
                     itemSelector: '.item',
                 });
             });
-        }
+        } */
+
+        if ($('.portfolio-container').length) { 
+            var portfolioIsotope = $('.portfolio-container').isotope({
+                itemSelector: '.portfolio-item',
+                layoutMode: 'fitRows',                
+            });
+    
+            $('#portfolio-flters li').on('click', function () {
+                $("#portfolio-flters li").removeClass('active');
+                $(this).addClass('active');
+        
+                portfolioIsotope.isotope({filter: $(this).data('filter')});
+            });
+        }        
         
         
          /* ## Fact Counter + Text Count - Our Success */
