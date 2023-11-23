@@ -2970,8 +2970,8 @@ h6,
 		padding-top: 95px;
 	}
 
-	.rpt-80,
-	.rpy-80 {
+	.rpt-100,
+	.rpy-100 {
 		padding-top: 80px;
 	}
 
@@ -7807,6 +7807,11 @@ h6,
 		width: 180px;
 		height: 180px;
 	}
+
+	.service-item {
+		margin-bottom: 20px;
+		padding: 0 15px 0;
+	}
 }
 
 .service-style-three .hover-content .icon {
@@ -11918,6 +11923,18 @@ h6.footer-title {
 @media only screen and (max-width: 767px) {
 	.footer-lets-talk {
 		font-size: 35px;
+	}
+
+	.footer-menu { 
+		display: inline-block !important;
+		margin-left: 0 !important;
+    	margin-right: 0 !important;
+	}
+
+	.footer-menu li {
+		display: inline-block !important;
+		margin-left: 0 !important;
+    	margin-right: 15px !important;
 	}
 }
 
