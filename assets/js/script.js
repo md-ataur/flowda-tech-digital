@@ -295,7 +295,7 @@
             var portfolioIsotope = $('.portfolio-container').isotope({
                 itemSelector: '.portfolio-item',
                 layoutMode: 'fitRows',     
-                sortBy : 'random',           
+                // sortBy : 'random',           
             });
     
             $('#portfolio-flters li').on('click', function () {
