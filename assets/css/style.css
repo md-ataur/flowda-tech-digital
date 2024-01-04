@@ -611,7 +611,8 @@ a.theme-btn {
 	-ms-flex-pack: center;
 	justify-content: center;
 	text-transform: uppercase;
-	background: var(--lighter-color);
+	background: rgba(255, 255, 255, 0.14);
+	border-radius: 12px;
 }
 
 .theme-btn:hover,
