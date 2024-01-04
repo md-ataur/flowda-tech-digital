@@ -291,8 +291,23 @@
             });
         } */
 
-        if ($('.portfolio-container').length) { 
-            var portfolioIsotope = $('.portfolio-container').isotope({
+        $('.portfolio-container').imagesLoaded(function () {
+            // Initialize Isotope after images are loaded
+            let portfolioIsotope = $('.portfolio-container').isotope({
+                itemSelector: '.portfolio-item',
+                layoutMode: 'fitRows',
+            });
+
+            $('#portfolio-flters li').on('click', function () {
+                $("#portfolio-flters li").removeClass('active');
+                $(this).addClass('active');
+        
+                portfolioIsotope.isotope({filter: $(this).data('filter')});
+            });
+        });
+
+        /* if ($('.portfolio-container').length) { 
+            let portfolioIsotope = $('.portfolio-container').isotope({
                 itemSelector: '.portfolio-item',
                 layoutMode: 'fitRows',     
                 // sortBy : 'random',           
@@ -304,7 +319,7 @@
         
                 portfolioIsotope.isotope({filter: $(this).data('filter')});
             });
-        }        
+        }       */
         
         
          /* ## Fact Counter + Text Count - Our Success */
