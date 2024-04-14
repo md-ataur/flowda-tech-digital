@@ -598,7 +598,7 @@ a.theme-btn {
 	font-size: 15px;
 	font-weight: 700;
 	text-align: center;
-	padding: 22px 36px;
+	padding: 20px 35px;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
@@ -742,7 +742,7 @@ a.theme-btn.style-two:hover {
 	margin-bottom: 15px;
 }
 
-.list-style-two li:before {
+/* .list-style-two li:before {
 	-webkit-box-flex: 0;
 	-ms-flex: none;
 	flex: none;
@@ -759,6 +759,14 @@ a.theme-btn.style-two:hover {
 	border-radius: 50%;
 	text-align: center;
 	font-family: "Font Awesome 5 Pro";
+} */
+
+.list-style-two li i {
+	-webkit-box-flex: 0;
+	-ms-flex: none;
+	flex: none;	
+	margin-top: 4px;
+	margin-right: 20px;	
 }
 
 /* List style Three */
@@ -806,12 +814,6 @@ a.theme-btn.style-two:hover {
 	margin-right: 6px;
 	border-radius: 50%;
 	border: 1px solid rgba(92, 99, 123, 0.4);
-}
-
-.social-style-one a:hover {
-	color: black;
-	background: var(--primary-color);
-	border-color: var(--primary-color);
 }
 
 /** Social Link Two **/
@@ -5000,7 +5002,7 @@ h6,
 
 .hidden-bar .inner-box {
 	position: relative;
-	padding: 80px 20px 40px;
+	padding: 50px 20px 40px;
 }
 
 @media only screen and (max-width: 375px) {
@@ -5013,7 +5015,7 @@ h6,
 .hidden-bar .inner-box .cross-icon {
 	position: absolute;
 	right: 30px;
-	top: 30px;
+	top: 18px;
 	cursor: pointer;
 	color: #ffffff;
 	font-size: 20px;
@@ -5025,7 +5027,7 @@ h6,
 .hidden-bar .inner-box h4 {
 	position: relative;
 	color: #ffffff;
-	margin-bottom: 35px;
+	margin-bottom: 0px;
 }
 
 /*Appointment Form */
@@ -7718,6 +7720,11 @@ h6,
 
 .service-item:hover .content h5 {
 	color: var(--primary-color);
+}
+
+.service-item:hover .content h5 a {
+	color: var(--primary-color);
+	text-decoration: none;
 }
 
 .service-item:hover .details-btn {
@@ -10504,14 +10511,15 @@ blockquote .blockquote-footer:before {
 	flex: none;
 	width: auto;
 	height: auto;
-	content: "\f068";
+	font-size: 25px;
+	content: "-";
 	margin-right: 15px;
 	background: transparent;
 	font-family: "Font Awesome 5 Pro";
 }
 
 .accordion-item .accordion-button.collapsed:after {
-	content: "\f067";
+	content: "+";
 }
 
 .accordion-item .accordion-collapse:after {
@@ -11692,6 +11700,27 @@ blockquote .blockquote-footer:before {
 	border-top: 1px solid var(--border-color);
 }
 
+.footer-right {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.whatsapp {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	padding: 10px 0;
+	margin-bottom: 10px;
+}
+
+.whatsapp i {
+	font-size: 35px;
+	margin-right:10px;
+	color: #00A651;
+}
+
 .footer-widget {
 	margin-bottom: 50px;
 }
@@ -11913,11 +11942,17 @@ h6.footer-title {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
-}
 
-@media only screen and (max-width: 991px) {
 	.footer-lets-talk {
 		font-size: 45px;
+	}
+
+	.footer-right {
+		display: block;
+	}
+
+	.footer-text {
+		text-align: left !important;
 	}
 }
 
@@ -11936,6 +11971,14 @@ h6.footer-title {
 		display: inline-block !important;
 		margin-left: 0 !important;
     	margin-right: 15px !important;
+	}
+
+	.footer-right {
+		display: block;
+	}
+
+	.footer-text {
+		text-align: left !important;
 	}
 }
 
@@ -12015,6 +12058,8 @@ h6.footer-title {
 
 .footer-text {
 	text-transform: capitalize;
+	text-align: center;
+	margin: 10px 0;
 }
 
 .footer-social {
@@ -12030,17 +12075,15 @@ h6.footer-title {
 
 .footer-social span {
 	margin-right: 20px;
-	margin-bottom: 10px;
-}
-
-.footer-social .social-style-one {
-	margin-bottom: 10px;
 }
 
 .footer-social .social-style-one a {
-	width: 42px;
-	height: 42px;
-	line-height: 42px;
+	width: auto;
+	height: auto;
+	font-size: 28px;
+	background: none;
+	border: none;
+	margin: 0 18px 0 0;
 }
 
 .footer-social .social-style-one a:not(:hover) {
